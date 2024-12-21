@@ -1,0 +1,61 @@
+﻿@model GetStudentProfileVM
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h4>Student Profile</h4>
+<hr />
+<form asp-action="Profile" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-6">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" class="form-control" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input readonly asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact" class="control-label"></label>
+                <input asp-for="Contact" class="form-control" />
+                <span asp-validation-for="Contact" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <img src="@(Model.ProfilePictureUrl == null ? "/Images/StudentImages/demoimage.jpg" : Model.ProfilePictureUrl)" width="120" height="150" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfilePictureFile" class="control-label"></label>
+                <input asp-for="ProfilePictureFile" class="form-control" />
+                <span asp-validation-for="ProfilePictureFile" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            @if (Model.ResumeUrl != null)
+            {
+                <a href="@Model.ResumeUrl">Download Resume</a>
+            }
+        </div>
+        <div class="form-group">
+            <label asp-for="ResumeFile" class="control-label"></label>
+            <input asp-for="ResumeFile" class="form-control" />
+            <span asp-validation-for="ResumeFile" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

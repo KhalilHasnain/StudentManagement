@@ -1,0 +1,30 @@
+﻿@using Newtonsoft.Json
+@inject IHttpContextAccessor httpContextAccessor
+
+@if (httpContextAccessor.HttpContext.Session.GetString("loginDetail") != null)
+{
+    var sessionObj = httpContextAccessor.HttpContext.Session.GetString("loginDetail");
+    var loginDetails = JsonConvert.DeserializeObject<UserLoginVM>(sessionObj);
+    <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Welcome! @loginDetails.Name</a>
+            <div class="dropdown-menu customDrpDwn" style="">
+                <a class="dropdown-item" asp-controller="User" asp-action="AdminProfile">Profile</a>
+            </div>
+        </li>
+    </ul>
+    @* <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Welcome! @loginDetails.UserName</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Profile</a>
+            </div>
+        </li>
+    </ul> *@
+    @* <span style="margin-right: 10px;" class="text-dark">Welcome! @loginDetails.UserName</span> *@
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-danger">Sign Out <i class="fa-solid fa-right-from-bracket"></i></a>
+}
+else
+{
+    <a asp-controller="Account" asp-action="Login" class="btn btn-dark">Sign In</a>
+}

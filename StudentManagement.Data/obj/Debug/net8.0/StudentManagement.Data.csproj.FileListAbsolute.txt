@@ -1,0 +1,45 @@
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.deps.json
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.dll
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.pdb
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Domain.dll
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Domain.pdb
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.csproj.AssemblyReference.cache
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.AssemblyInfoInputs.cache
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.AssemblyInfo.cs
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.csproj.CoreCompileInputs.cache
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentM.AE15DA4A.Up2Date
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.dll
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\refint\StudentManagement.Data.dll
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.pdb
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\ref\StudentManagement.Data.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.deps.json
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.pdb
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Domain.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Domain.pdb
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.csproj.AssemblyReference.cache
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.AssemblyInfoInputs.cache
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.AssemblyInfo.cs
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.csproj.CoreCompileInputs.cache
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentM.AE15DA4A.Up2Date
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\refint\StudentManagement.Data.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.pdb
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\ref\StudentManagement.Data.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.deps.json
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Data.pdb
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Domain.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\bin\Debug\net8.0\StudentManagement.Domain.pdb
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.csproj.AssemblyReference.cache
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.AssemblyInfoInputs.cache
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.AssemblyInfo.cs
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.csproj.CoreCompileInputs.cache
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentM.AE15DA4A.Up2Date
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\refint\StudentManagement.Data.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\StudentManagement.Data.pdb
+D:\Projects\Student Management\StudentManagement\StudentManagement.Data\obj\Debug\net8.0\ref\StudentManagement.Data.dll

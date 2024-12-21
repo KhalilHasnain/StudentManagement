@@ -1,0 +1,152 @@
+﻿@model UserLoginVM
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+@if (ViewData["loginFailedHeading"] != null && ViewData["loginFailedMessage"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+
+         @* toastr.error('@ViewData["loginFailedMessage"]', '@ViewData["loginFailedHeading"]') *@
+
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "3000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+        toastr.error("@ViewData["loginFailedMessage"]", "@ViewData["loginFailedHeading"]")
+    </script>
+}
+
+@* @if (ViewData["loginFailedHeading"] != null && ViewData["loginFailedMessage"] != null)
+{
+    var loginFailedMessage = ViewData["loginFailedMessage"];
+    <script type="text/javascript">
+
+        Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: '@loginFailedMessage',
+            showConfirmButton: false,
+            timer: 2000
+        });
+
+            Swal.fire({
+                title: '@ViewData["loginFailedHeading"]',
+                text: '@ViewData["loginFailedMessage"]',
+                icon: 'error',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                reverseButtons: true
+            });
+
+    </script>
+} *@
+
+@if (TempData["logoutMessage"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+        @* toastr.success('@TempData["logoutMessage"]') *@
+
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "2500",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+        toastr.info(" ", "@TempData["logoutMessage"]")
+    </script>
+}
+
+<h1>Sign In</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <div class="input-group">
+                    <input asp-for="Password" class="form-control" />
+                    <div class="input-group-append">
+                        <span id="togglePassword" class="input-group-text eye-icon">👁️</span>
+                    </div>
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Role" class="control-label"></label>
+                <select asp-for="Role" class="form-control" asp-items="@Html.GetEnumSelectList<EnumRole>()">
+                    <option selected disabled>---Select Role---</option>
+                </select>
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Sign In" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const togglePassword = document.getElementById('togglePassword');
+            if (togglePassword) {
+                togglePassword.addEventListener('click', function () {
+                    const passwordField = document.getElementById('Password');
+                    if (passwordField) {
+                        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+                        passwordField.setAttribute('type', type);
+                        this.textContent = type === 'password' ? '👁️' : '🙈';
+                    }
+                });
+            }
+        });
+    </script>
+}

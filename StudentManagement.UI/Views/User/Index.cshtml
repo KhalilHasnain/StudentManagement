@@ -1,0 +1,186 @@
+﻿@* @model IEnumerable<GetAllTeachersVM>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Teachers List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table> *@
+
+
+@model PagingInfoVM<GetAllTeachersVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-md-5">
+        <h1>Teachers List</h1>
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Add New Teacher <i class="fa-solid fa-circle-plus"></i></a>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <form asp-controller="User" asp-action="Index" method="get">
+            <div class="row mt-3">
+                <div class="offset-md-3 col-md-7">
+                    <input type="text" class="form-control" name="searchQuery" placeholder="Search by Name or Username" />
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" value="Search" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12 mt-3 ms-2">
+                <a asp-controller="User" asp-action="Index" class="btn btn-danger">Reset</a>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                User Name
+            </th>
+            @* <th>Role</th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Data)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @* @Html.DisplayFor(modelItem => item.Role) *@
+                    <a asp-controller="User" asp-action="EditTeacher" asp-route-teacherId="@item.TeacherId" class="btn btn-warning">Edit <i class="fa-solid fa-pen-to-square"></i></a> | <a onclick="deleteTeacher(@item.TeacherId)" class="btn btn-danger">Delete <i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<cs-pager cs-paging-pagesize=@Convert.ToInt32(Model.PageSize)
+          cs-paging-pagenumber=@Convert.ToInt32(Model.PageNumber)
+          cs-paging-totalitems=@Convert.ToInt32(Model.TotalItems)
+          cs-pagenumber-param="pageNumber"
+          asp-controller="User"
+          asp-action="Index"
+          cs-pager-li-current-class="page-item active"
+          cs-pager-li-other-class="page-item"
+          cs-pager-li-non-active-class="page-item disabled"
+          cs-pager-link-current-class="page-link"
+          cs-pager-link-other-class="page-link">
+      </cs-pager>
+
+      @section Scripts{
+          <script type="text/javascript">
+              function deleteTeacher(teacherId) {
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+            swalWithBootstrapButtons.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Yes, delete it!",
+                cancelButtonText: "No, cancel!",
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: '@Url.Action("Delete", "User")',
+                        type:'DELETE',
+                        data: { teacherId: teacherId },
+                        success: function (response) {
+                            if (response.success) {
+                                swalWithBootstrapButtons.fire({
+                                    title: `${response.title}`,
+                                    text: `${response.message}`,
+                                    icon: "success"
+                                }).then((res) => {
+                                    if (res.isConfirmed) {
+                                        location.reload();
+                                    }
+                                });
+                            }else{
+                                swalWithBootstrapButtons.fire({
+                                    title: "Error",
+                                    text: "Something went wrong. An internal error occur...! :)",
+                                    icon: "error"
+                                });
+                            }
+                        }
+                    });
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire({
+                        title: "Cancelled",
+                        text: "Teacher Profile is safe :)",
+                        icon: "error"
+                    });
+                }
+            });
+              }
+              </script>
+      }

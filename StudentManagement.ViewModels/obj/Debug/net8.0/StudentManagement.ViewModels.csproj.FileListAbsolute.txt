@@ -1,0 +1,41 @@
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.deps.json
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.dll
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.pdb
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.AssemblyInfo.cs
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.dll
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\refint\StudentManagement.ViewModels.dll
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.pdb
+C:\Users\Dark Horse\source\repos\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\ref\StudentManagement.ViewModels.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.deps.json
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.pdb
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.Domain.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.Domain.pdb
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.csproj.AssemblyReference.cache
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.AssemblyInfoInputs.cache
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.AssemblyInfo.cs
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.csproj.CoreCompileInputs.cache
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentM.9A6E46CD.Up2Date
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\refint\StudentManagement.ViewModels.dll
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.pdb
+E:\Couses Practice\Core\Paid Course\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\ref\StudentManagement.ViewModels.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.deps.json
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.ViewModels.pdb
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.Domain.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\bin\Debug\net8.0\StudentManagement.Domain.pdb
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.csproj.AssemblyReference.cache
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.AssemblyInfoInputs.cache
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.AssemblyInfo.cs
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.csproj.CoreCompileInputs.cache
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentM.9A6E46CD.Up2Date
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\refint\StudentManagement.ViewModels.dll
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\StudentManagement.ViewModels.pdb
+D:\Projects\Student Management\StudentManagement\StudentManagement.ViewModels\obj\Debug\net8.0\ref\StudentManagement.ViewModels.dll

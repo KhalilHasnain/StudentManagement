@@ -1,0 +1,67 @@
+﻿@using Newtonsoft.Json
+@inject IHttpContextAccessor httpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - StudentManagement.UI</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    @* <link rel="stylesheet" href="~/css/MorphTheme.css" /> *@
+    <link rel="stylesheet" href="~/css/MintyTheme.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/StudentManagement.UI.styles.css" asp-append-version="true" />
+
+    @* For Toastr Notification *@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
+    @* For Sweet Alert *@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+
+    @* For Font Awesome *@
+    <link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        @if (httpContextAccessor.HttpContext.Session.GetString("loginDetail") != null)
+        {
+            var sessionObj = httpContextAccessor.HttpContext.Session.GetString("loginDetail");
+            var loginDetail = JsonConvert.DeserializeObject<UserLoginVM>(sessionObj);
+                if (loginDetail.Role == 1)
+            {
+                <partial name="_AdminNav" />
+            }
+            if (loginDetail.Role == 2)
+            {
+                <partial name="_TeacherNav" />
+            }
+            if (loginDetail.Role == 3)
+            {
+                <partial name="_StudentNav" />
+            }
+        }
+        else
+        {
+            <partial name="_DefaultNav" />
+        }
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <partial name="_Notification" />
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - StudentManagement - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
